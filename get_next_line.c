@@ -28,7 +28,7 @@ char	*ft_remove_line(char *buffer)
 	size_t	i;
 
 	i = 0;
-	if (!buffer)
+	if (!buffer[0])
 		return (NULL);
 	while (buffer[i] && buffer[i] != '\n')
 		i++;
