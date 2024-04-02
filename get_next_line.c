@@ -92,7 +92,7 @@ char	*ft_read_file(int fd, char *res)
 		buffer[bytes_read] = '\0';
 		res = ft_realloc(res, buffer);
 		if (ft_strchr(buffer, '\n'))
-			break;
+			break ;
 	}
 	free(buffer);
 	return (res);
@@ -113,7 +113,7 @@ char	*get_next_line(int fd)
 	buffer = ft_remove_line(buffer);
 	return (line);
 }
-
+/*
 int main(int argc, char **argv)
 {
     int fd;
@@ -140,3 +140,4 @@ int main(int argc, char **argv)
     close(fd);
     return (0);
 }
+*/
