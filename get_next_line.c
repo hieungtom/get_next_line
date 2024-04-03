@@ -28,7 +28,7 @@ char	*ft_remove_line(char *buffer)
 	size_t	i;
 
 	i = 0;
-	if (!buffer[0])
+	if (!buffer)
 		return (NULL);
 	while (buffer[i] && buffer[i] != '\n')
 		i++;
@@ -51,7 +51,7 @@ char	*ft_read_line(char *buffer)
 
 	i= 0;
 	j = 0;
-	if (!buffer)
+	if (!buffer[0])
 		return (NULL);
 	while (buffer[i] && buffer[i] != '\n')
 		i++;
